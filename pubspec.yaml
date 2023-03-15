@@ -63,6 +63,15 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
+    - assets/parllax_asset/parallax0.png
+    - assets/parllax_asset/parallax1.png
+    - assets/parllax_asset/parallax2.png
+    - assets/parllax_asset/parallax3.png
+    - assets/parllax_asset/parallax4.png
+    - assets/parllax_asset/parallax5.png
+    - assets/parllax_asset/parallax6.png
+    - assets/parllax_asset/parallax7.png
+    - assets/parllax_asset/parallax8.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
