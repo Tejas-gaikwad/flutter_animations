@@ -39,6 +39,9 @@ dependencies:
   flutter_typeahead: ^4.3.7
   textfield_tags: ^2.0.2
   google_fonts: null
+  local_auth: ^2.1.6
+  shared_preferences: ^2.1.0
+
 
 dev_dependencies:
   flutter_test:
