@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'biometric_authenticate/biometric.dart';
+import 'calender/calender.dart';
 import 'change_text_color/text_color_change.dart';
 import 'homeScreen.dart';
 
@@ -82,9 +83,10 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: LoginPage(
-        isBiometricEnabled: _isBiometricEnabled ?? true,
-      ),
+      home: Calendar(),
+      // LoginPage(
+      //   isBiometricEnabled: _isBiometricEnabled ?? true,
+      // ),
     );
   }
 }
