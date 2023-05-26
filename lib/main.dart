@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_tutorial/pdf_examples/pdf_example_2/widgets/first_page.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'biometric_authenticate/biometric.dart';
-import 'calender/calender.dart';
-import 'change_text_color/text_color_change.dart';
-import 'homeScreen.dart';
+import 'pdf_examples/final_pdf_screen.dart';
+import 'pdf_examples/pdf_example/app.dart';
+import 'pdf_examples/pdf_example_2/pdf_example_2.dart';
+import 'pdf_examples/pdf_example_2/widgets/average_glucose/average_glucose_screen.dart';
+import 'pdf_examples/pdf_example_2/widgets/average_glucose/graph.dart';
+import 'pdf_examples/pdf_example_2/widgets/time_in_range_widget/time_in_range_widget.dart';
+import 'pdf_examples/pdf_example_2/widgets/typical_day/typical_day_graph_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,14 +30,14 @@ class _MyAppState extends State<MyApp> {
   @override
   void didChangeDependencies() async {
     super.didChangeDependencies();
-    final output = await _loadPreferences();
-    if (output == true) {
-      _authenticate().then((isAuthenticated) {
-        setState(() {
-          _isAuthenticated = isAuthenticated;
-        });
-      });
-    }
+    // final output = await _loadPreferences();
+    // if (output == true) {
+    //   _authenticate().then((isAuthenticated) {
+    //     setState(() {
+    //       _isAuthenticated = isAuthenticated;
+    //     });
+    //   });
+    // }
     super.setState(() {});
   }
 
@@ -83,7 +87,14 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: Calendar(),
+      home:
+          // FirstPage()
+          FinalPdfScren(),
+      // TimeInRangeGraph()
+      // GraphWidget(),
+      // AverageGlucoseScreen(),
+      // PDFExample2(),
+      // MyAppScreen(),
       // LoginPage(
       //   isBiometricEnabled: _isBiometricEnabled ?? true,
       // ),
