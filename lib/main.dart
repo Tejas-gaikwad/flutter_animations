@@ -1,15 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_tutorial/pdf_examples/pdf_example_2/widgets/first_page.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'pdf_examples/final_pdf_screen.dart';
-import 'pdf_examples/pdf_example/app.dart';
-import 'pdf_examples/pdf_example_2/pdf_example_2.dart';
-import 'pdf_examples/pdf_example_2/widgets/average_glucose/average_glucose_screen.dart';
-import 'pdf_examples/pdf_example_2/widgets/average_glucose/graph.dart';
-import 'pdf_examples/pdf_example_2/widgets/time_in_range_widget/time_in_range_widget.dart';
-import 'pdf_examples/pdf_example_2/widgets/typical_day/typical_day_graph_screen.dart';
+import 'parallax_flutter/parallax_one.dart';
+import 'radial_button.dart/radial_button_1/radial_button.dart';
 
 void main() {
   runApp(const MyApp());
@@ -87,9 +81,9 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home:
-          // FirstPage()
-          FinalPdfScren(),
+      home: RadialButtonScreen(),
+      // FirstPage()
+      // FinalPdfScren(),
       // TimeInRangeGraph()
       // GraphWidget(),
       // AverageGlucoseScreen(),
